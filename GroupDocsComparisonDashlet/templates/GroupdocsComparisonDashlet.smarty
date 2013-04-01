@@ -1,0 +1,4 @@
+{foreach  item=gdFile from=$dataArray}
+    <iframe src="https://apps.groupdocs.com/document-comparison/embed/{$gdFile->embed_key}/{$gdFile->file_id}?&referer={$gdFile->cmsName}/{$gdFile->pluginVersion}" frameborder="0" width="{$gdFile->width}" height="{$gdFile->height}"></iframe>
+    <hr>
+{/foreach}
